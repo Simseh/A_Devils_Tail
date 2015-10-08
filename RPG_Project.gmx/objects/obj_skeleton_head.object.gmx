@@ -30,30 +30,6 @@
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>101</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_move</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>000001000</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>.5</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -73,8 +49,8 @@
           <argument>
             <kind>1</kind>
             <string>scr_skeleton_head();
-//phy_position_x += sign(obj_player.x -x);
-//phy_position_y += sign(obj_player.y -y);
+phy_position_x += sign(obj_player.x - x);
+phy_position_y += sign(obj_player.y - y);
 
 </string>
           </argument>
@@ -82,7 +58,7 @@
       </action>
     </event>
   </events>
-  <PhysicsObject>0</PhysicsObject>
+  <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>
   <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
@@ -93,5 +69,8 @@
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>30,30</point>
+    <point>30,30</point>
+  </PhysicsShapePoints>
 </object>
