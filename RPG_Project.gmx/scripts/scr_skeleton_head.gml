@@ -1,15 +1,14 @@
-switch(direction div 90){
-    case 0:
+switch(face){
+    case RIGHT:
         sprite_index = spr_skeleton_head_right;
         break;
-    case 1:
+    case UP:
         sprite_index = spr_skeleton_head_up_down;
         break;
-    case 2:
+    case LEFT:
         sprite_index = spr_skeleton_head_left;
         break;
-    case 3:
+    case DOWN:
         sprite_index = spr_skeleton_head_up_down;
         break;
 }
-
