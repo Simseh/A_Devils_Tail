@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp = 5;
+            <string>amulet = -1;
+horns = -2;
+damage = 1;
+hp = 5;
 maxhp = hp;
 mana = 10;
 maxmana = mana;

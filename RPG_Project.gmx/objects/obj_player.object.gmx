@@ -26,7 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>attacked = false;
-hp = 20;
 player_speed = 2;
 state = scr_move_state;
 </string>

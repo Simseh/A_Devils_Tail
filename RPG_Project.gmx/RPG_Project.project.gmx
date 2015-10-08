@@ -59,6 +59,8 @@
       <script>scripts\scr_inventory_add_item.gml</script>
       <script>scripts\scr_inventory_remove_item.gml</script>
       <script>scripts\scr_inventory_pickup_item.gml</script>
+      <script>scripts\scr_item_db.gml</script>
+      <script>scripts\scr_get_item_value.gml</script>
       <script>scripts\scr_x_to_gx.gml</script>
       <script>scripts\scr_y_to_gy.gml</script>
     </scripts>
