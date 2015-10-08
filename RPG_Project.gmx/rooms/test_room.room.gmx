@@ -95,6 +95,7 @@
     <instance objName="obj_amulet" x="160" y="208" name="inst_93393141" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_amulet" x="176" y="144" name="inst_2E1FCE59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_amulet" x="208" y="192" name="inst_A21E64C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_skeleton_head" x="144" y="256" name="inst_0C18B054" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

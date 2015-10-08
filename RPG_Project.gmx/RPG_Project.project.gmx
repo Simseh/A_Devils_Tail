@@ -6,6 +6,13 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="Enemies">
+      <sprites name="Skeleton_head">
+        <sprite>sprites\spr_skeleton_head_right</sprite>
+        <sprite>sprites\spr_skeleton_head_left</sprite>
+        <sprite>sprites\spr_skeleton_head_up_down</sprite>
+      </sprites>
+    </sprites>
     <sprites name="Player">
       <sprites name="Idle">
         <sprite>sprites\spr_player_idle_down</sprite>
@@ -64,6 +71,9 @@
       <script>scripts\scr_x_to_gx.gml</script>
       <script>scripts\scr_y_to_gy.gml</script>
     </scripts>
+    <scripts name="Enemy_Scripts">
+      <script>scripts\scr_skeleton_head.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_text</font>
@@ -81,6 +91,9 @@
       <object>objects\obj_horns</object>
       <object>objects\obj_tail</object>
       <object>objects\obj_item</object>
+    </objects>
+    <objects name="Enemies">
+      <object>objects\obj_skeleton_head</object>
     </objects>
   </objects>
   <rooms name="rooms">
