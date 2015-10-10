@@ -6,7 +6,7 @@
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>obj_lifeform</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>spr_player_mask</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -85,6 +85,9 @@ if(obj_player_stats.hp &lt;= 0){
 };
 if(obj_player_stats.expr &gt;= obj_player_stats.maxexpr){
     obj_player_stats.level += 1;
+    obj_player_stats.damage += 1;
+    obj_player_stats.hp += 5;
+    obj_player_stats.maxhp = obj_player_stats.maxhp+5;
     obj_player_stats.expr = 0;
     obj_player_stats.maxexpr = obj_player_stats.maxexpr*2;
 };

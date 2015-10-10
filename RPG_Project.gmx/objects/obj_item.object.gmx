@@ -32,7 +32,7 @@ scr_item_db();
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_player">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,9 +49,12 @@ scr_item_db();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(keyboard_check_pressed(ord("F"))){
-    scr_inventory_pickup_item(item);
-    instance_destroy();
+            <string>/// Player pickup
+if(place_meeting(x,y,obj_player)){
+    if(keyboard_check_pressed(ord("F"))){
+        scr_inventory_pickup_item(item);
+        instance_destroy();
+    }
 }
 
 </string>

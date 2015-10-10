@@ -30,6 +30,7 @@
         <sprite>sprites\spr_player_shadow</sprite>
         <sprite>sprites\spr_stats_background</sprite>
         <sprite>sprites\spr_attack_hitbox</sprite>
+        <sprite>sprites\spr_player_mask</sprite>
       </sprites>
       <sprites name="Attack">
         <sprite>sprites\spr_player_attack_right</sprite>
