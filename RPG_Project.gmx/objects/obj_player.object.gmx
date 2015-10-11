@@ -91,6 +91,9 @@ if(obj_player_stats.expr &gt;= obj_player_stats.maxexpr){
     obj_player_stats.expr = 0;
     obj_player_stats.maxexpr = obj_player_stats.maxexpr*2;
 };
+if(keyboard_check_released(vk_escape)){
+    room_goto(rm_pause_menu);
+}
 </string>
           </argument>
         </arguments>

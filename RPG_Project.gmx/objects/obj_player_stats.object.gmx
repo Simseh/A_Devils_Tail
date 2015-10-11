@@ -86,6 +86,7 @@ draw_set_color(c_white);
             <kind>1</kind>
             <string>/// Draw Stats on Screen
 draw_sprite(spr_stats_background, image_index, 7, 8);
+draw_set_font(fnt_text);
 draw_text(16,16, "LEVEL: " + string(level));
 draw_text(16,32, "HEALTH: " + string(hp) + "/" + string(maxhp));
 draw_text(16,48, "EXP: " + string(expr) + "/" + string(maxexpr));

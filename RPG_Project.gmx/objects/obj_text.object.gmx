@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-phy_fixed_rotation = true;
-hp = 5;
-maxhp = 5;
+            <string>alpha = 0;
+print = "";
+time = 0;
+depth = depth - instance_number(obj_text);
 </string>
           </argument>
         </arguments>
@@ -51,9 +51,8 @@ maxhp = 5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_alpha(1);
-depth = -y;
-if(hp &lt;= 0){
+            <string>var delete = max(keyboard_check_pressed(vk_space),keyboard_check_pressed(vk_enter),0);
+if(delete == 1){
     instance_destroy();
 }
 </string>
@@ -61,7 +60,7 @@ if(hp &lt;= 0){
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_lifeform">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -78,13 +77,15 @@ if(hp &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Collide
+            <string>/// Add letters over time
+if(time &lt; text_length){
+    time += text_spd;
+    print = string_copy(text,0,time);
+}
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obj_wall">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -101,7 +102,32 @@ if(hp &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Collide
+            <string>/// Render textbox &amp; text
+draw_set_alpha(alpha);
+if(alpha &lt; 1){
+    alpha += text_spd/10;
+}else{
+    alpha = 1;
+}
+
+
+draw_set_font(font);
+draw_set_color(c_gray);
+draw_rectangle(x,y,x+box_width,y+box_height,0);
+draw_set_color(c_black);
+draw_rectangle(x,y,x+box_width,y+box_height,1);
+
+draw_set_color(c_white);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+draw_text_ext
+(
+    x + padding,
+    y + padding,
+    print,
+    font_size + (font_size/2),
+    maxlength
+);
 </string>
           </argument>
         </arguments>

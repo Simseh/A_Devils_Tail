@@ -121,6 +121,7 @@ ds_grid_clear(count, 0);
           <argument>
             <kind>1</kind>
             <string>/// Draw the inventory
+draw_set_font(fnt_text);
 draw_text(x,y-20,"Inventory");
 for(var yy = 0; yy &lt; width; yy++){
     for(var xx=0; xx &lt; height; xx++){
@@ -134,6 +135,8 @@ for(var yy = 0; yy &lt; width; yy++){
         }
     }
 }
+// Set the size of the gui layer
+display_set_gui_size(view_wview[0],view_hview[0])
 </string>
           </argument>
         </arguments>
