@@ -86,11 +86,25 @@ draw_set_color(c_white);
           <argument>
             <kind>1</kind>
             <string>/// Draw Stats on Screen
-draw_sprite(spr_stats_background, image_index, 7, 8);
-draw_set_font(fnt_text);
-draw_text(16,16, "LEVEL: " + string(level));
-draw_text(16,32, "HEALTH: " + string(hp) + "/" + string(maxhp));
-draw_text(16,48, "EXP: " + string(expr) + "/" + string(maxexpr));
+
+var hpbar = (hp / maxhp)*100;
+draw_set_color(c_black);
+draw_rectangle(72, 36, 332, 53,0);
+draw_rectangle(72, 61, 332, 78,0);
+draw_sprite_stretched(spr_player_healthbar, (hp / maxhp)*99, 100, 35, 232, 17);
+draw_sprite_stretched(spr_player_expbar, (expr / maxexpr)*99, 100, 61, 232, 17);
+draw_sprite_stretched(spr_player_stats, image_index, 16, 9, 330, 90); 
+draw_set_font(fnt_stats);
+
+if(level &lt; 10){
+draw_set_color(c_white);
+draw_text(43,52, "0"+string(level));
+}else{
+draw_set_color(c_white);
+draw_text(55,52, string(level));
+}
+//draw_text(16,32, "HEALTH: " + string(hp) + "/" + string(maxhp));
+//draw_text(16,48, "EXP: " + string(expr) + "/" + string(maxexpr));
 
 </string>
           </argument>

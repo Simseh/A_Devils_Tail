@@ -46,6 +46,7 @@
     </sprites>
     <sprites name="World">
       <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_checkpoint</sprite>
     </sprites>
     <sprites name="Misc.">
       <sprite>sprites\spr_experience</sprite>
@@ -57,6 +58,11 @@
     </sprites>
     <sprites name="Menu">
       <sprite>sprites\spr_menu_arrow</sprite>
+    </sprites>
+    <sprites name="UI">
+      <sprite>sprites\spr_player_stats</sprite>
+      <sprite>sprites\spr_player_healthbar</sprite>
+      <sprite>sprites\spr_player_expbar</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -96,6 +102,7 @@
     <font>fonts\fnt_text</font>
     <font>fonts\fnt_menu</font>
     <font>fonts\fnt_dialog</font>
+    <font>fonts\fnt_stats</font>
   </fonts>
   <objects name="objects">
     <objects name="Effects">
@@ -108,8 +115,6 @@
     </objects>
     <objects name="Functions">
       <object>objects\obj_view</object>
-      <object>objects\obj_player_stats</object>
-      <object>objects\obj_text</object>
     </objects>
     <objects name="Items">
       <object>objects\obj_amulet</object>
@@ -129,15 +134,19 @@
     </objects>
     <objects name="World">
       <object>objects\obj_wall</object>
+      <object>objects\obj_checkpoint</object>
     </objects>
     <objects name="Test">
       <object>objects\obj_dialog_example</object>
+    </objects>
+    <objects name="UI">
+      <object>objects\obj_text</object>
+      <object>objects\obj_player_stats</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start_menu</room>
     <room>rooms\test_room</room>
-    <room>rooms\rm_pause_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

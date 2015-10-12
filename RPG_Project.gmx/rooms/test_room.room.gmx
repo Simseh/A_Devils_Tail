@@ -96,7 +96,8 @@
     <instance objName="obj_skeleton_head" x="112" y="256" name="inst_0C18B054" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dialog_example" x="80" y="16" name="inst_05A66D3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pause" x="32" y="0" name="inst_CE00149A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_menu" x="128" y="96" name="inst_FAC2A6DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu" x="32" y="32" name="inst_FAC2A6DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="352" y="96" name="inst_62CB4979" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tiles_temp_grass" x="304" y="536" w="64" h="64" xo="128" yo="192" id="10000062" name="inst_3D60EE1C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -28,7 +28,7 @@ switch(mpos){
         break;
     }
 }
-}else{
+}else if(global.pause){
     switch(mpos){
     case 0:
     {
