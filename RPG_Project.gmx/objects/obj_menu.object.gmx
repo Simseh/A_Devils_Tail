@@ -94,12 +94,13 @@ push = max(keyboard_check_released(vk_enter),keyboard_check_released(vk_space),k
 if(push == 1){
     scr_menu();
 }
+
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -117,6 +118,22 @@ if(push == 1){
           <argument>
             <kind>1</kind>
             <string>/// Draw the menu
+if(room == rm_start_menu){
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_middle);
+    draw_set_font(fnt_menu);
+    draw_set_color(c_white);
+    
+    var m;
+    for (m = 0; m &lt; array_length_1d(menu); m += 1){
+        draw_text(x + space, y + (m * space), string(menu[m]));
+    }
+    draw_sprite(sprite_index, 0, x + 16, y + mpos * space);
+}else if(room != rm_start_menu &amp;&amp; global.pause){
+draw_set_alpha(0.25);
+draw_set_color(c_black);
+draw_rectangle(0,0,room_width,room_height,0);
+draw_set_alpha(1);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 draw_set_font(fnt_menu);
@@ -127,6 +144,7 @@ for (m = 0; m &lt; array_length_1d(menu); m += 1){
     draw_text(x + space, y + (m * space), string(menu[m]));
 }
 draw_sprite(sprite_index, 0, x + 16, y + mpos * space);
+}
 </string>
           </argument>
         </arguments>

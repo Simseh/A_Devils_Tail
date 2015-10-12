@@ -42,6 +42,7 @@
       <sprites name="Inventory">
         <sprite>sprites\spr_items</sprite>
       </sprites>
+      <sprite>sprites\spr_player_temp</sprite>
     </sprites>
     <sprites name="World">
       <sprite>sprites\spr_wall</sprite>
@@ -118,6 +119,7 @@
     </objects>
     <objects name="Menu">
       <object>objects\obj_menu</object>
+      <object>objects\obj_pause</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_player</object>

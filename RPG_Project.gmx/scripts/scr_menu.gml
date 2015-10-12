@@ -32,12 +32,9 @@ switch(mpos){
     switch(mpos){
     case 0:
     {
-        room_goto(test_room);
+        global.pause = 0;
         if(instance_exists(obj_player_stats)){
             obj_player_stats.visible = 1;
-        }
-        if(instance_exists(obj_inventory)){
-            obj_inventory.visible = 1;
         }
         break;
     }

@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,19 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>amulet = -1;
-horns = -2;
-damage = 1;
-hp = 5;
-maxhp = hp;
-mana = 10;
-maxmana = mana;
-expr = 0;
-maxexpr = 5;
-level = 1;
-visible = 1;
-draw_set_font(fnt_text);
-draw_set_color(c_white);
+            <string>global.pause = 0;
 </string>
           </argument>
         </arguments>
@@ -60,38 +48,15 @@ draw_set_color(c_white);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(hp &lt; 0){
-    hp = 0;
+            <string>if(keyboard_check_released(vk_escape)){
+    if(global.pause == 0){
+        global.pause = 1;
+        obj_player_stats.visible = 0;
+    }else{
+        global.pause = 0;
+        obj_player_stats.visible = 1;
+    }
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Draw Stats on Screen
-draw_sprite(spr_stats_background, image_index, 7, 8);
-draw_set_font(fnt_text);
-draw_text(16,16, "LEVEL: " + string(level));
-draw_text(16,32, "HEALTH: " + string(hp) + "/" + string(maxhp));
-draw_text(16,48, "EXP: " + string(expr) + "/" + string(maxexpr));
-
 </string>
           </argument>
         </arguments>
