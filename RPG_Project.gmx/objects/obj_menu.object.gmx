@@ -44,7 +44,7 @@
    if(instance_exists(obj_inventory)){
    obj_inventory.visible = 0;
    }
-    menu[0] = "Continue";
+    menu[0] = "Resume";
     menu[1] = "Equipment";
     menu[2] = "Inventory";
     menu[3] = "Options";

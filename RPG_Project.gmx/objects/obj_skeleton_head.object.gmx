@@ -118,7 +118,7 @@ if(hp &lt;=0){
 
 if(hp &lt; maxhp){
 var hpbar = (hp / maxhp)*100
-draw_healthbar(x-32,y-42,x+30,y-35,hpbar,c_black,c_red,c_green,0,true,true)
+draw_healthbar(x-30,y-40,x+30,y-36,hpbar,c_black,c_maroon,c_maroon,0,true,true)
 draw_sprite(sprite_index,-1,x,y)
 }
 

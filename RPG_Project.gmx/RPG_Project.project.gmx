@@ -13,6 +13,12 @@
         <sprite>sprites\spr_skeleton_head_up_down</sprite>
         <sprite>sprites\spr_skeleton_head_death</sprite>
       </sprites>
+      <sprites name="Beetle">
+        <sprite>sprites\spr_beetle_down</sprite>
+        <sprite>sprites\spr_beetle_up</sprite>
+        <sprite>sprites\spr_beetle_right</sprite>
+        <sprite>sprites\spr_beetle_left</sprite>
+      </sprites>
     </sprites>
     <sprites name="Player">
       <sprites name="Idle">
@@ -70,6 +76,7 @@
     <background>background\bg_start_menu</background>
     <background>background\tiles_temp_grass</background>
     <background>background\tiles_temp_grass_other</background>
+    <background>background\tiles_isometric_grass</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -111,6 +118,7 @@
     <objects name="Enemies">
       <object>objects\obj_lifeform</object>
       <object>objects\obj_skeleton_head</object>
+      <object>objects\obj_beetle</object>
       <object>objects\obj_skeleton_head_dead</object>
     </objects>
     <objects name="Functions">
@@ -131,6 +139,7 @@
       <object>objects\obj_inventory</object>
       <object>objects\obj_experience</object>
       <object>objects\obj_damage</object>
+      <object>objects\obj_player_temp</object>
     </objects>
     <objects name="World">
       <object>objects\obj_wall</object>

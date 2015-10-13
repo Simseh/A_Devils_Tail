@@ -13,7 +13,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>640</width>
-  <height>360</height>
+  <width>1024</width>
+  <height>576</height>
   <data>images\bg_start_menu.png</data>
 </background>
